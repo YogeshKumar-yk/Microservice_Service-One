@@ -39,6 +39,7 @@ public class DepartmentController {
 
         ResponseDto responseDto = deptService.saveDepartment(requestDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(responseDto);
+        
     }
     @GetMapping
     public ResponseEntity<List<Department>> getAllDepartment() {
