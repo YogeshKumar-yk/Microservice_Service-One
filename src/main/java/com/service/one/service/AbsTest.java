@@ -2,10 +2,14 @@ package com.service.one.service;
 
 import org.apache.logging.log4j.util.TriConsumer;
 import org.springframework.data.web.querydsl.QuerydslPredicateArgumentResolverSupport;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.*;
 import java.util.function.*;
-
+@ControllerAdvice
+@RestControllerAdvice
 public class AbsTest {
 
 //    AbsTest a = new AbsTest() ;
@@ -23,6 +27,7 @@ public class AbsTest {
 //    public abstract void test(int x);
 
     public void test2() {
+    String s = "sss";
 
         Comparable comparable = new Comparable() {
             @Override
@@ -35,6 +40,7 @@ public class AbsTest {
 
         list.stream().sorted(Comparator.reverseOrder());
         Collections.sort(list);
+
 
 
     }
