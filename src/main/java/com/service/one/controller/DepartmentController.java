@@ -36,8 +36,11 @@ public class DepartmentController {
     }
     @PostMapping("/saveDepartment")
     public ResponseEntity<ResponseDto> saveDepartment(@RequestBody RequestDto requestDto) {
-
+      System.out.print("---yogesh--");
+        System.out.print("---yogesh--");
         ResponseDto responseDto = deptService.saveDepartment(requestDto);
+      System.out.print("---yogesh--");
+       System.out.print("---yogesh--");
         return ResponseEntity.status(HttpStatus.CREATED).body(responseDto);
         
     }
