@@ -22,6 +22,7 @@ import java.util.function.Consumer;
         private  EmployeeFeign employeeFeign;
 
         public List<EmployeeDto> getEmployeesByDeptId(long deptId) {
+
             return employeeFeign.getListOfEmployees(deptId);
         }
         public ResponseDto saveDepartment(RequestDto requestDto) {
@@ -47,7 +48,7 @@ import java.util.function.Consumer;
         return list;
      }
     public List<Department> getAllDepartments() {
-        Optional<Department> byId = departmentRepo.findById(1L);
+//        Optional<Department> byId = departmentRepo.findById(1L);
         List<Department> departmentList = departmentRepo.findAll();
         return departmentList;
     }
