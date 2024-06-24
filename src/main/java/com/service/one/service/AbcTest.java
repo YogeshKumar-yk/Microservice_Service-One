@@ -3,8 +3,8 @@ package com.service.one.service;
 import java.util.Comparator;
 import java.util.function.Supplier;
 
-
-public class  AbcTest {
+@FunctionalInterface
+public interface  AbcTest {
 //    int a ;
     int b =10;
 
@@ -12,9 +12,9 @@ public class  AbcTest {
 
     static int d = 10;
 
-//    public void test ();
+    public void test ();
 
-    public final  void test1(int x){
+    public  default void test1(int x){
 
         
     }
