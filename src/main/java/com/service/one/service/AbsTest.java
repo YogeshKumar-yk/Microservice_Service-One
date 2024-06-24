@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.*;
 import java.util.function.*;
-@ControllerAdvice
-@RestControllerAdvice
-public class AbsTest {
+
+public class AbsTest extends AbcTest {
 
 //    AbsTest a = new AbsTest() ;
 
@@ -84,8 +83,9 @@ public class AbsTest {
     public static void test1() {
     }
 
-    public static void test1(int x) {
-    }
+//    public static void test1(int x) {
+//    }
+//
 
     public static void test1(int x, int y){
 
@@ -94,7 +94,6 @@ public class AbsTest {
     public static void staticTest(){
         AbsTest.test1(1,5);
         AbsTest.test1();
-        AbsTest.test1(1);
 
     }
 
