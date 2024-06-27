@@ -37,12 +37,10 @@ public class DepartmentController {
     @PostMapping("/saveDepartment")
     public ResponseEntity<ResponseDto> saveDepartment(@RequestBody RequestDto requestDto) {
 
-
-        System.out.print("-----Antony -----------");
+        System.out.print("-----Antony  Testing-----------");
         ResponseDto responseDto = deptService.saveDepartment(requestDto);
-        System.out.print("-----Antony -----------");
-
-        System.out.print("-----Antony -----------");
+        System.out.print("-----Antony Testing-----------");
+        System.out.print("-----Antony Testing-----------");
         return ResponseEntity.status(HttpStatus.CREATED).body(responseDto);
         
     }
@@ -50,6 +48,7 @@ public class DepartmentController {
     public ResponseEntity<List<Department>> getAllDepartment() {
 
         List<Department> allDepartments = deptService.getAllDepartments();
+
         return new ResponseEntity<>(allDepartments, HttpStatus.OK);
     }
 
